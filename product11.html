@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persol Gunmetal-23</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+        <div class="search-container">
+            <label for="search">
+                <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+            </label>
+            <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+        </div>
+
+    </header>   
+    <nav>    
+        <a class="menuknop" href="contact.html">CONTACT</a>
+    
+        <a class="menuknop" href="klanten.html">KLANTEN</a>
+    
+        <a id="shopknop" class="menuknop" href="shop.html">SHOP</a>   
+    
+        <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+    </nav>
+    <main >   
+    <div class="product" > 
+        <img src="assets\images\12 zonnebrillen\11.webp" alt="11" class="product-foto-indiv">
+        <div class="prijskaart">GUCCI<br>Gucci Granite-Pilot<br>€410.00</div>
+        <div class="specificaties">Lenstint: Grijs<br>Vorm: Piloot (traanvormig)<br>UV-filter: Ja<br>Maat: 56<br> Breedte neusbrug: 1.4 cm</div>
+        <p class="beschrijving">Deze Gucci zonnebril, een moderne kijk op de tijdloze aviator-stijl, belichaamt elegantie en robuustheid. Met zijn stijlvolle grijze lenstint straalt het een tijdloze klasse uit. Het montuur, zowel modern als tijdloos, benadrukt de perfecte balans tussen stijl en duurzaamheid. Een ware aanvulling op elke outfit voor degenen die zowel mode als functionaliteit waarderen.</p>
+        
+        <div class="retour">
+            ↺100 dagen recht op retour <br>Gratis verzending en retour
+        </div>
+    </div>  
+
+    <h1 id="review-titel">Reviews</h1>
+
+    <form class= "review" action="#" method="submit">
+        <label for="beoordeling">Geef uw beoordeling:</label>
+        <br><br>
+        <textarea id="placeholder-review" name="beoordeling" id="beoordeling" rows="4" cols="50" placeholder="Schrijf hier uw beoordeling..."></textarea>
+        <br>
+        <input id="verzend-knop" type="submit" value="verzenden">
+    </form>
+    
+        <div class="review">
+            <h2>Luca Rossi</h2>
+            <p>Dit is de perfecte zonnebril voor lange stranddagen. Comfortabel en modieus.</p>
+        </div>
+
+        <div class="review">
+            <h2>Mario Petri</h2>
+            <p>De bril is veel te groot voor mijn gezicht, en de glazen zijn te donker. Niet geschikt voor mij.</p>
+        </div>
+
+        <div class="review">
+            <h2>Jasmine Nguyen</h2>
+            <p>Een mooie zonnebril voor een scherpe prijs. Ik ben tevreden met mijn aankoop.</p>
+        </div>
+
+    </main>
+
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+        
+        <ul class="shoppingList">
+        </ul>
+
+        <div class="cartTotals">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+    
+</body>
+</html>

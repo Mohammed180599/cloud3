@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persol Gunmetal-23</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+        <div class="search-container">
+            <label for="search">
+                <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+            </label>
+            <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+        </div>
+
+    </header>   
+    <nav>    
+        <a class="menuknop" href="contact.html">CONTACT</a>
+    
+        <a class="menuknop" href="klanten.html">KLANTEN</a>
+    
+        <a id="shopknop" class="menuknop" href="shop.html">SHOP</a>   
+    
+        <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+    </nav>
+
+    <main >
+        
+    <div class="product" > 
+        <img src="assets\images\12 zonnebrillen\9.webp" alt="9" class="product-foto-indiv">
+        <div class="prijskaart">PERSOL<br>Persol Amazonia-12<br>€180.00</div>
+        <div class="specificaties">Lenstint: Varengroen<br>Vorm: trapezium<br>UV-filter: Ja<br>Maat: 55<br>Breedte neusbrug: 1.5 cm</div>
+        <p class="beschrijving">Deze zonnebril neemt je mee op een exotische reis, geïnspireerd door het wilde Madagaskar en zijn unieke fauna. Het montuur, gemaakt van stevig acetaat met een tijgerpatroon, straalt een robuuste en krachtige uitstraling uit. Het ontwerp omarmt de essentie van de overvloedige en diverse natuur van het eiland, waardoor je de schoonheid van de natuur bij elke dracht kunt ervaren.</p>
+        
+        <div class="retour">
+            ↺100 dagen recht op retour <br>Gratis verzending en retour
+        </div>
+    </div>  
+
+    <h1 id="review-titel">Reviews</h1>
+
+    <form class= "review" action="#" method="submit">
+        <label for="beoordeling">Geef uw beoordeling:</label>
+        <br><br>
+        <textarea id="placeholder-review" name="beoordeling" id="beoordeling" rows="4" cols="50" placeholder="Schrijf hier uw beoordeling..."></textarea>
+        <br>
+        <input id="verzend-knop" type="submit" value="verzenden">
+    </form>
+    
+        <div class="review">
+            <h2>Antoine Dupont</h2>
+            <p>De glazen zijn kristalhelder en bieden uitstekende bescherming tegen de zon. Ik zou niet zonder kunnen.</p>
+        </div>
+
+        <div class="review">
+            <h2>Antoino Malakasi</h2>
+            <p>Ik had verwacht dat deze zonnebril meer stijlvol zou zijn. Het ontwerp is een beetje saai.</p>
+        </div>
+
+        <div class="review">
+            <h2>Laurent Leclerc</h2>
+            <p>De bril zit zo strak dat het ongemakkelijk is om hem de hele dag te dragen. Ik gebruik hem alleen af en toe.</p>
+        </div>
+
+    </main>
+
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+        
+        <ul class="shoppingList">
+        </ul>
+
+        <div class="cartTotals">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+    
+</body>
+</html>

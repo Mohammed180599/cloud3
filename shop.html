@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunClass Shop</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+    <script src="js/wishlist.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+        <div class="search-container">
+            <label for="search">
+                <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+            </label>
+            <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+        </div>
+    </header>   
+
+<nav>    
+    <a class="menuknop" href="contact.html">CONTACT</a>
+
+    <a class="menuknop" href="klanten.html">KLANTEN</a>
+
+    <a id="shopknop" class="menuknop" href="shop.html">SHOP</a>   
+
+    <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+</nav>
+
+<main>
+    <section>
+        <div class="assortiment">assortiment</div>
+        
+    </section>
+    <section class="twaalf-paren">
+        <article>
+            <a href="product1.html">
+                <img src="assets\images\12 zonnebrillen\1.webp" alt="1" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Gunmetal-23', 250.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon1"
+                    onclick="changeHeartIcon1()"/>
+                    <br><span>PERSOL </span><br>Persol Gunmetal-23<br> € 250,00
+                </div>
+        </article>
+        
+        <article>
+            <a href="product2.html">
+                <img src="assets\images\12 zonnebrillen\2.webp" alt="2" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Round-Blacks-19', 190.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon2"
+                    onclick="changeHeartIcon2()"/>
+                    <br><span>PERSOL </span><br>Persol Round-Blacks-19<br> € 190,00
+                </div>
+        </article>
+        <article>
+            <a href="product3.html">
+                <img src="assets\images\12 zonnebrillen\3.webp" alt="3" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Oval-Darks-90', 240.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon3"
+                    onclick="changeHeartIcon3()"/>
+                    <br><span>PERSOL </span><br>Persol Oval-Darks-90<br> € 240,00
+                </div>
+        </article>
+        <article>
+            <a href="product4.html">
+                <img src="assets\images\12 zonnebrillen\4.webp" alt="4" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Chestnut-44', 380.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon4"
+                    onclick="changeHeartIcon4()"/>
+                    <br><span>PERSOL </span><br>Persol Chestnut-44<br> € 380,00
+                </div>
+        </article>
+        <article>
+            <a href="product5.html">
+                <img src="assets\images\12 zonnebrillen\5.webp" alt="5" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Chestnut-78', 220.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon5"
+                    onclick="changeHeartIcon5()"/>
+                    <br><span>PERSOL </span><br>Persol Chestnut-78<br> € 220,00
+                </div>
+        </article>
+        <article>
+            <a href="product6.html">
+                <img src="assets\images\12 zonnebrillen\6.webp" alt="6" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Pliables-90', 200.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon6"
+                    onclick="changeHeartIcon6()"/>
+                    <br><span>PERSOL </span><br>Persol Pliables-90<br> € 200,00
+                </div>
+        </article>
+        <article>
+            <a href="product7.html">
+                <img src="assets\images\12 zonnebrillen\7.webp" alt="7" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Steel-49', 170.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon7"
+                    onclick="changeHeartIcon7()"/>
+                    <br><span>PERSOL </span><br>Persol Steel-49<br> € 170,00
+                </div>
+        </article>
+        <article>
+            <a href="product8.html">
+                <img src="assets\images\12 zonnebrillen\8.webp" alt="8" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Robust-2', 200.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon8"
+                    onclick="changeHeartIcon8()"/>
+                    <br><span>PERSOL </span><br>Persol Robust-2<br> € 200,00
+                </div>
+        </article>
+        <article>
+            <a href="product9.html">
+                <img src="assets\images\12 zonnebrillen\9.webp" alt="9" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Persol Amazonia-12', 180.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon9"
+                    onclick="changeHeartIcon9()"/>
+                    <br><span>PERSOL </span><br>Persol Amazonia-12<br> € 180,00
+                </div>
+        </article>
+        <article>
+            <a href="product10.html">
+                <img src="assets\images\12 zonnebrillen\10.webp" alt="10" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Gucci Golden-Pilot', 430.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon10"
+                    onclick="changeHeartIcon10()"/>
+                    <br><span>GUCCI </span><br>Gucci Golden-Pilot<br> € 430,00
+                </div>
+        </article>
+        <article>
+            <a href="product11.html">
+                <img src="assets\images\12 zonnebrillen\11.webp" alt="11" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Gucci Granite-Pilot', 410.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon11"
+                    onclick="changeHeartIcon11()"/>
+                    <br><span>GUCCI </span><br>Gucci Granite-Pilot<br> € 410,00
+                </div>
+        </article>
+        <article>
+            <a href="product12.html">
+                <img src="assets\images\12 zonnebrillen\12.webp" alt="12" class="product-foto-shop">
+                </a>
+                <div>
+                    <button class="purchaseButton" onclick="addToCart('Gucci Photochromic', 360.00)"><img src="assets\icons\buy-button.png" alt="buy-button"></button>
+                    <img
+                    src="assets/icons/heart-default.png"
+                    alt="Heart"
+                    class="heart-icon"
+                    id="heartIcon12"
+                    onclick="changeHeartIcon12()"/>
+                    <br><span>GUCCI </span><br>Gucci Photochromic<br> € 360,00
+                </div>
+        </article>
+    </section>
+    </main>
+
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+
+        <button class="clearCartButton" onclick="clearCart()">Winkelmandje legen</button>
+    
+        <ul class="shoppingList">
+            
+        </ul>
+    
+        <div class="cartTotals">
+
+            <br>            
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+    
+
+
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+
+
+</body>
+</html>

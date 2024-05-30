@@ -1,0 +1,787 @@
+html, body {
+    box-sizing: border-box;
+    background-color: #FFF8F0;
+    font-family: Helvetica;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    padding-left: 1rem;
+    border-bottom: 3px solid maroon;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: .9rem;
+    margin-right: 1rem;
+}
+
+#search {
+    box-sizing: border-box;
+    margin-left: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #7d7d7d;
+}
+
+#search-button {
+    margin-right: 0.2rem;
+}
+#search-button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    padding: 10px;
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: nav;
+    margin-top: 1.7rem;
+    border-bottom: 3px solid maroon;
+}
+
+.menuknop {
+    font-weight: bold;
+    padding-top: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.menuknop:hover {
+    color: rgb(255, 255, 255);
+    background-color: maroon;
+    
+}
+
+.winkelwagen{
+    padding-top: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+}
+
+.winkelwagen:hover{
+    background-color: chocolate;
+    border-radius: 10%;
+}
+
+
+@media (max-width: 560px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 1rem;
+        border-bottom: 3px solid maroon;
+    }
+    
+    nav {
+        grid-area: nav;
+        display: flex;
+        justify-content:center;
+        margin-top: 0rem;
+        border-bottom: 3px solid maroon;
+    }
+
+    .menuknop {
+        padding-bottom: 15px;
+    } 
+
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content:center;
+        padding-left: 1rem;
+        border-bottom: 3px solid maroon;
+    }
+    
+    .logo {
+        width: 180px;
+        height: auto;
+    }
+}
+
+
+/*
+--------------------------------------------
+INDEX
+--------------------------------------------
+*/
+
+
+main {
+    grid-area: main;
+}
+
+main section figure img {
+    width: 100%;
+    display: block;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background-color: maroon;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: #FFF8F0;
+    font-size: 0.9rem;
+    text-align: center;
+    
+}
+
+
+.bestverkocht {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    color: maroon;
+}
+
+
+.product-foto {
+    width: 400px; 
+    height: auto;
+    border: 1px solid maroon;
+}
+
+.product-foto:hover {
+    border: 3px solid maroon;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.product-foto:active {
+    transform: translateY(-4px);
+}
+
+.drie-paren {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.4;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.4;
+    font-family: serif;
+}
+
+.ontdek-meer {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:maroon;
+    letter-spacing: 0.2rem;
+}
+
+.ontdek-meer:hover {
+    text-decoration: underline;
+}
+
+.ontdek-meer:active {
+    transform: translateY(-4px);
+}
+
+.eigen-foto {
+    float: left;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.over-ons{
+    margin-bottom: 3rem;
+}
+
+.tekst-bij-foto {
+    line-height: 1.8rem;
+    font-style: italic;
+    
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+  
+.word-lid {
+    padding: 20px;
+    border: 1px solid maroon;
+    border-radius: 15px;
+    max-width: 400px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+.inschrijving-formulier {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.inschrijving-formulier input {
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+#naam, #email{
+    color: #7c7a7a;
+    font-style: italic;
+}
+
+.inschrijving-formulier button {
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .drie-paren {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+    .drie-paren article {
+        margin-bottom: 1rem;
+        
+    }
+
+    .product-foto {
+        width: 450px; }
+
+    .over-ons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .eigen-foto {
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+    }
+    
+    .tekst-bij-foto {
+        line-height: 1.8rem;
+        font-style: italic;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .word-lid {
+        margin: 0 auto;
+    }
+
+}
+
+/*
+--------------------------------------------
+SHOP
+--------------------------------------------
+*/
+
+#shopknop {
+    color: white;
+    background-color: maroon;
+}
+
+
+.assortiment {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    color: maroon;
+    text-transform: uppercase;
+}
+
+.passende-paar {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: maroon;
+}
+
+
+.product-foto-shop {
+    width: 100%; 
+    height: auto;
+    border: 1px solid maroon;
+    box-sizing: border-box;
+}
+
+.product-foto-shop:hover {
+    border: 3px solid maroon;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.product-foto-shop:active {
+    transform: translateY(-4px);
+}
+
+.twaalf-paren {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.twaalf-paren article {
+    position: relative;
+    width: 23%; 
+    margin-bottom: 10px; 
+}
+
+.heart-icon {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    width: 25px;
+    height: auto; 
+    cursor: pointer;
+}
+
+.purchaseButton {
+    cursor: pointer; 
+}
+
+
+
+@media (max-width: 1000px) {
+    .twaalf-paren {
+        flex-direction: column; 
+        align-items: center;
+        font-size: 1.3rem;
+        
+    }
+
+    .twaalf-paren article {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .product-foto-shop {
+        width: 100%;
+        height: auto;
+        border: 1px solid maroon;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* 
+--------------------------------------------
+PRODUCT
+--------------------------------------------
+*/
+
+.product {
+    display: grid;
+    grid-template-areas: 
+    "foto text1 "
+    "foto text2 "
+    "foto beschrijving "
+    "foto text3 ";
+    gap: 2rem;
+    
+}
+
+.product-foto-indiv {
+    width: 600px ; 
+    height:auto;
+    border: 1px solid maroon;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+    grid-area: foto;
+}
+
+.prijskaart {
+    display:inline-block;
+    border: 1px solid maroon;
+    line-height: 2.5;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2rem; 
+    grid-area: text1;
+    font-weight: bold;
+    
+}
+
+
+
+.specificaties {
+    
+    border: 1px solid maroon;
+    margin-top: 0rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2rem; 
+    grid-area: text2;
+    line-height: 2.5rem;
+}
+
+.beschrijving {
+    
+    border: 1px solid maroon;
+    margin-top: 2rem;
+    margin-left: 20px;
+    padding: 2rem; 
+    grid-area: beschrijving;
+    margin-right: 20px;
+    
+}
+
+.retour {
+    margin-right: 20px;
+    line-height: 2rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: #efefef;
+    padding: 2rem;
+    color:#000000; 
+    grid-area: text3;
+    margin-left: 20px;
+}
+
+#review-titel {
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.review {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 2rem;
+    border-radius: 5px;
+  }
+
+.review h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+.review p {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+
+#verzend-knop {
+    background-color: maroon;
+    color: white; 
+    width: fit-content;
+    border: none;
+}
+
+#placeholder-review {
+    color:rgb(85, 85, 85);
+}
+
+
+@media (max-width: 900px) {
+
+    .product {
+        display: flex;
+        flex-direction: column; 
+        align-items: left;
+    }
+    .product-foto-indiv {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .prijskaart {
+        font-size: 1.3rem;
+    }
+
+    .beschrijving {
+        font-size: 1.3rem;
+    }
+}
+
+/*
+--------------------------------------------
+CONTACT
+--------------------------------------------
+*/
+
+#contactknop {
+    color: white;
+    background-color: maroon;
+}
+
+
+.alles {
+    display: grid;
+    grid-template-areas: 
+    "contact1 kaart"
+    "contact2 kaart"
+    "contact3 kaart";
+}
+.contacteer-ons {
+    grid-area: contact1;
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.contact-info {
+    grid-area: contact2;
+    display: flex;
+    align-items: center;
+}
+
+.sunclass-inv {
+    width: 150px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.logo-en-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3.5rem;
+}
+
+.small-logos img {
+    margin-top: 15px;
+    margin-left: 4px; 
+    border-radius: 30%;
+    width: 35px;
+}
+
+.contact-text {
+    line-height: 1.7rem;
+    margin-left: 5%;
+}
+
+address {
+    margin-left: 4rem;
+    line-height: 2;
+}
+
+.container {
+    grid-area: contact3;
+    max-width: 400px;
+    margin: 2rem 4rem;
+    padding: 20px;
+}
+
+.contactformulier {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b5b3b3; 
+    
+}
+
+#formButton {
+    width: -100%;
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+}
+
+
+.kaart {
+    grid-area: kaart;
+    margin-top: 2rem;
+    line-height: 1.9rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .alles {
+        display: flex;
+        flex-direction: column; 
+        align-items: left;
+        margin-left: 2rem;
+    }
+
+}
+
+
+
+/*
+--------------------------------------------
+KLANTEN
+--------------------------------------------
+*/
+
+#klantenknop {
+    color: white;
+    background-color: maroon;
+}
+
+.klanten-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 25px;
+    font-weight:400;
+    font-size: 18px;
+}
+
+.klant {
+    margin: 10px;
+    border: 2px solid maroon;
+    border-radius:10px ;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.klant img {
+    max-width: 100%;
+    width: 15rem;
+    height: auto;
+    border-radius:  9px 9px 0px 0px;
+    padding-bottom: 2rem;
+}
+
+/*
+--------------------------------------------
+WINKELMANDJE
+--------------------------------------------
+*/
+
+aside {
+    position: fixed;
+    top: 79px;
+    right: -350px; /* Verborgen */
+    width: 350px;
+    height: 77.4%;
+    background-color: #fff;
+    border: maroon 3px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    
+}
+
+.shoppingList {
+    list-style-type:circle;
+    padding: 10px;
+    list-style: circle;
+    list-style-type: disc;
+    margin-top: 1rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.shoppingCartTitle {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 3px solid maroon;
+}
+
+.cartTotals {
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.clearCartButton {
+    padding: 2px 4px 4px 6px;
+    float: right;
+    font-size: smaller;
+    font-weight: bold;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+}
+
+.checkoutButton {
+    cursor: pointer; 
+    width: 180px;
+    margin-top: 50px;
+    float: right;
+}
+
+/*-----------------------*/
+
+
+

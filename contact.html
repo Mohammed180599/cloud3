@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunClass Contact</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+    
+<!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
+
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./js/mapScript.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+        <div class="search-container">
+            <label for="search">
+                <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+            </label>
+            <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+        </div>
+
+    </header>   
+    <nav>    
+        <a id="contactknop" class="menuknop" href="contact.html">CONTACT</a>
+
+        <a class="menuknop" href="klanten.html">KLANTEN</a>
+
+        <a class="menuknop" href="shop.html">SHOP</a>    
+        <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+    </nav>
+
+<main class="alles"> 
+    <h1 class="contacteer-ons">CONTACTEER ONS:</h1>
+    <section class="contact-info">
+        <div class="logo-en-social-media">
+
+            <img src="assets\images\logo-sunclass-inv.png" alt="logo-sunclass" class="sunclass-inv">
+            <div class="small-logos">
+
+            <a href="https://twitter.com/Stadsfeestzaal" target="_blank"><img src="assets\icons\twitter-icon.png" alt="twitter"></a>
+
+            <a href="https://www.facebook.com/pages/Stadsfeestzaal-Antwerpen/381043278597015?locale=nl_NL" target="_blank"><img src="assets\icons\facebook-icon.png" alt="facebook"></a>
+
+            <a href="https://www.instagram.com/stadsfeestzaal/" target="_blank"><img src="assets\icons\instagram-icon.png" alt="instagram"></a>
+
+            </div>
+        </div>
+        <address class="contact-text">
+            <span>
+            Sunclass Meir 78 <br>
+            Stadsfeestzaal<br>
+            2000 Antwerpen<br>
+            </span>
+            <a href="tel:+1234567890">tel: <span style="text-decoration: underline;">03 438 38 00</span></a><br>
+            <span><a href="mailto:contact@sunclass.be" style="text-decoration: underline;">contact@sunclass.be</a></span>
+        </address>
+    </section>
+        
+
+        <div class="container">
+            <h1 class="contactformulier">Contactformulier</h1>
+            <form>
+                <label for="naam">Naam*:</label>
+                <input type="text" id="naam" name="naam" required>
+    
+                <label for="email">E-mail*:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="product">Productnaam:</label>
+                <input type="text" id="product" name="product">
+    
+                <label for="boodschap">Boodschap*:</label>
+                <textarea id="boodschap" name="boodschap" rows="5"></textarea>
+
+                <button id="formButton" type="submit">Verzenden</button>
+                <br><br>
+                <p>Onze klantenservice is beschikbaar van maandag tot en met vrijdag, van 10:00 tot 19:00.</p>
+            </form>
+        </div>
+        <article class="kaart">
+        
+            <address>
+            <span>
+                <h1>BEZOEK ONZE WINKEL IN ANTWERPEN:</h1>    
+                Meir 78<br> Stadsfeestzaal <br> 2000 Antwerpen <br>
+                <div class="SunClassMap" id="SunClassMap"></div>
+            </span>
+            </address>
+            
+        </article>
+        
+    </main>
+
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+        
+        <ul class="shoppingList">
+        </ul>
+
+        <div class="cartTotals">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+   
+
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+    
+</body>
+</html>

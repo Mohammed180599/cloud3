@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persol Gunmetal-23</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+        <div class="search-container">
+            <label for="search">
+                <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+            </label>
+            <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+        </div>
+
+    </header>   
+    <nav>    
+        <a class="menuknop" href="contact.html">CONTACT</a>
+    
+        <a class="menuknop" href="klanten.html">KLANTEN</a>
+    
+        <a id="shopknop" class="menuknop" href="shop.html">SHOP</a>   
+    
+        <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+    </nav>
+
+    <main >
+        
+    <div class="product" > 
+        <img src="assets\images\12 zonnebrillen\2.webp" alt="2" class="product-foto-indiv">
+        <div class="prijskaart">PERSOL<br>Persol Round-Blacks-19<br>€190.00</div>
+        <div class="specificaties">Lenstint: Donker<br>Vorm: rond<br>UV-filter: Ja<br>Maat: 51<br>Breedte neusbrug: 1.9 cm</div>
+        <p class="beschrijving">Verken tijdloze klasse met dit veelzijdige Persol ontwerp, geschikt voor elke gelegenheid. Laat je onderscheiden door de diep donkere lenzen en het elegante ronde lensontwerp. Geniet van ultiem comfort dankzij de flexibele veren en ervaar de stevige bouw die een vleugje finesse toevoegt aan je stijl. Persol belichaamt een perfecte mix van tijdloze elegantie en moderne robuustheid.</p>
+        
+        <div class="retour">
+            ↺100 dagen recht op retour <br>Gratis verzending en retour
+        </div>
+    </div>  
+
+    <h1 id="review-titel">Reviews</h1>
+
+        <form class= "review" action="#" method="submit">
+            <label for="beoordeling">Geef uw beoordeling:</label>
+            <br><br>
+            <textarea id="placeholder-review" name="beoordeling" id="beoordeling" rows="4" cols="50" placeholder="Schrijf hier uw beoordeling..."></textarea>
+            <br>
+            <input id="verzend-knop" type="submit" value="verzenden">
+        </form>
+        
+        <div class="review">
+            <h2>Hiroshi Tanaka</h2>
+            <p>De glazen krassen snel, wat echt teleurstellend is. Verder zit hij wel comfortabel.</p>
+        </div>
+
+        <div class="review">
+            <h2>Natalia Petrova</h2>
+            <p>Dit is de beste zonnebril die ik ooit heb gehad. De kleur van de glazen is perfect en hij is super duurzaam.</p>
+        </div>
+
+        <div class="review">
+            <h2>Carlos Gutierrez</h2>
+            <p>De pasvorm is een beetje vreemd en hij glijdt vaak van mijn neus. Niet mijn favoriet.</p>
+        </div>
+
+    </main>
+
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+        
+        <ul class="shoppingList">
+        </ul>
+
+        <div class="cartTotals">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+    
+</body>
+</html>

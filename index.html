@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunClass - Home</title>
+    <link rel="icon" href="assets\icons\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/shoppingCart.js" defer></script>
+
+</head>
+<body>
+    <header>
+            <a class="logo" id="logo" href="index.html"><img src="assets\images\logo-home.png" alt="logo-sunclass" width="150px"></a>
+
+            <div class="search-container">
+                <label for="search">
+                    <img id="search-button" src="assets/icons/search-button.png" width="18px" height="18px">
+                </label>
+                <input type="search" name="zoeken" id="search" placeholder="zoeken..." />
+            </div>
+
+    </header>   
+    <nav>    
+        <a class="menuknop" href="contact.html">CONTACT</a>
+
+        <a class="menuknop" href="klanten.html">KLANTEN</a>
+
+        <a class="menuknop" href="shop.html">SHOP</a>   
+     
+        <a class="winkelwagen" href="#" onclick="toggleCart()"><img src="assets\icons\cart-icon.png"alt="winkelwagen" width="20px"></a>
+        
+    </nav>
+    <main>
+        <section>
+            <figure><img src="assets\images\sfeerfoto.png" alt="sfeerfoto"></figure>
+            <h2 class="bestverkocht">Bestverkochte paren</h2>
+        </section>
+        <section class="drie-paren">
+            <article>
+                <a href="product1.html"><img src="assets\images\12 zonnebrillen\1-front.webp" alt="1" class="product-foto">
+                <p><span>PERSOL</span><br> Gunmetal-23 <br> € 250,00</p></a>
+            </article>
+
+            <article>
+                <a href="product10.html"><img src="assets\images\12 zonnebrillen\10-front.webp" alt="3" class="product-foto">
+                <p><span>GUCCI</span><br> Golden-Pilot <br> € 430,00</p></a>
+            </article>
+
+            <article>
+                <a href="product5.html"><img src="assets\images\12 zonnebrillen\5-front.webp" alt="2" class="product-foto">
+                <p><span>PERSOL</span><br> Chestnut-78 <br> € 220,00</p></a>
+            </article>
+            
+        </section>
+        <section class="ontdek-meer">
+            <a href="shop.html"><p>Ontdek meer  <img src="assets\icons\pijl-rechts-maroon.png" alt="pijl rechts" width="18px"></p></a> 
+        </section>
+        <section class="over-ons">
+            <img class="eigen-foto" src="assets\images\eigen-foto.png" alt="eigen foto" width="200px">
+            <p class="tekst-bij-foto">Welkom bij Sunclass, waar onze passie voor eyewear en meer dan 50 jaar ervaring samenkomen. Wij zijn gepassioneerd over het aanbieden van de meest exclusieve en luxueuze zonnebrillen op de markt. Onze missie is eenvoudig maar diepgaand: we streven ernaar elke klant te helpen bij het vinden van de perfecte zonnebril die past bij hun stijl, persoonlijkheid en behoeften. Een zonnebril is meer dan een accessoire; het is een uitdrukking van individualiteit en levensstijl. Ons deskundige team staat klaar om te assisteren en te adviseren, en met ons ruime assortiment ben je verzekerd van de perfecte balans tussen stijl, kwaliteit en bescherming. Ontdek vandaag nog onze collectie en straal met zelfvertrouwen.</p>
+        </section>
+
+        <section class="tekst-bij-foto">
+            <br><br><br><br>
+            <h2><span style="font-size: 25px;">Over mij</span></h2>
+            <p><q>Ik ben een eerstejaarsstudent aan de AP-Hogeschool en volg met enthousiasme de graduaatsopleiding programmeren. Enkele jaren geleden is mijn fascinatie voor zonnebrillen in diverse stijlen ontstaan. Deze passie heeft me geleid naar mijn keuze voor de ontwikkeling van deze webshop, waar een uitgebreid assortiment aan zonnebrillen te ontdekken is. Voor elke smaak is er wel iets te vinden. Ik ben erg gemotiveerd om mijn interesse in programmeren te combineren met mijn liefde voor zonnebrillen en een aantrekkelijke online winkelervaring te creëren.</q><br><br>&mdash; Mohammed El Yabraki</p>
+            </p>
+        </section>
+        <br><br><br>
+        
+        <section class="word-lid">
+            <h2>Word Lid</h2>
+            <p>Schrijf je in en ontvang updates van sunclass.be</p>
+            <div class="inschrijving-formulier">
+                <input type="name" placeholder="naam" id="naam">
+                <input type="email" placeholder="e-mailadres" id="email">
+                <button>Mijn Inschrijving Bevestigen</button>
+            </div>
+        </section>
+    </main>
+    <aside id="cart">
+        <h2 class="shoppingCartTitle">Winkelmandje
+            <img src="assets\icons\close-icon.png" alt="Close" class="close-button" onclick="closeCart()">
+        </h2>
+        
+        <ul class="shoppingList">
+        </ul>
+
+        <div class="cartTotals">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Sub-totaal: <span id="subtotal">€0.00</span></p>
+            <p>BTW (21%): <span id="vat">€0.00</span></p>
+            <p>Totaal: <span id="total">€0.00</span></p>
+        </div>
+        <button class="checkoutButton"><img src="assets\icons\checkout-button.png" alt="checkoutButton"></button>
+    </aside>
+    <footer>
+        <p>&copy; 2023 - sunclass.be - All Rights Reserved. <br> <a href="#logo" style="text-decoration: underline;">Terug naar boven</a> </p>    
+    </footer>
+</body>
+</html>
